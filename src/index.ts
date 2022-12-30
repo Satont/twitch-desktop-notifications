@@ -11,14 +11,16 @@ const me = await apiClient.users.getMe()
 await eventSub.subscribeToChannelFollowEvents(me.id, (event) => {
   notifier.notify({
     title: `New Follow`,
-    message: event.userName
+    message: event.userName,
+    time: 10000,
   })
 })
 
 await eventSub.subscribeToChannelRaidEventsTo(me.id, (event) => {
   notifier.notify({
     title: 'New Raid',
-    message: `${event.raidedBroadcasterName} with ${event.viewers}`
+    message: `${event.raidedBroadcasterName} with ${event.viewers}`,
+    time: 10000,
   })
 })
 
