@@ -1,0 +1,25 @@
+{
+  "name": "desktop-twitch-notifications",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Satont <satontworldwide@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@twurple/api": "^5.3.1",
+    "@twurple/auth": "^5.3.1",
+    "@twurple/eventsub-ws": "^5.3.1",
+    "dotenv": "^16.0.3",
+    "envalid": "^7.3.1",
+    "node-notifier": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/node-notifier": "^8.0.2",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.4"
+  }
+}
