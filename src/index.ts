@@ -19,7 +19,7 @@ await eventSub.subscribeToChannelFollowEvents(me.id, (event) => {
 await eventSub.subscribeToChannelRaidEventsTo(me.id, (event) => {
   notifier.notify({
     title: 'New Raid',
-    message: `${event.raidedBroadcasterName} with ${event.viewers}`,
+    message: `${event.raidingBroadcasterName} with ${event.viewers}`,
     time: 10000,
   })
 })
